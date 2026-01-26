@@ -155,7 +155,7 @@ public class AttendanceTracker extends JFrame {
         
         add(scrollPane);
         
-        //Maka generate ng time po once na start po yung java program
+        //Make generate ng time po once na start po yung java program
         generateAttendanceRecord();
     }
     
@@ -180,8 +180,9 @@ public class AttendanceTracker extends JFrame {
                             middleInitialField.getText();
             
             JOptionPane.showMessageDialog(this,
-                "Attendance record generated successfully!\n" +
-                "Name: " + fullName + "\n" +
+                """
+                Attendance record generated successfully!
+                Name: """ + fullName + "\n" +
                 "Course/Year: " + courseYearField.getText() + "\n" +
                 "Time In: " + formattedDateTime,
                 "Success",
